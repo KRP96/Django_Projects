@@ -1,15 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    
-    
-    <title>Tasks</title>
-</head>
-<body>
+{% extends "tasks/layout.html" %}  <!-- if we extends from layout.html we cannot use common html code lines-->
+
+
+{% block body %}    <!-- block body Except this part-->
     <h1>Add Task</h1>
     <form>
         <input type="text" name="tasks">
         <input type="submit">
     </form>
-</body>
-</html>
+{% endblock %}
