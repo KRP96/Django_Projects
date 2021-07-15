@@ -5,6 +5,8 @@
     <ul>
         {% for task in tasks %}
             <li>{{ task }}</li>
+        {% empty %}
+            <li>No tasks.</li>
         {% endfor %}
     </ul>
     <a href="{% url 'tasks:add' %}">Add a new Task</a>       <!--tasks:add because newyear project has the same name urls.py name= add. So that why we added unique name for it-->
