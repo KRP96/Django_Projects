@@ -7,4 +7,5 @@
         <input type="text" name="tasks">
         <input type="submit">
     </form>
+    <a href ="{% url 'tasks:index' %}">View Tasks</a>     <!--tasks:add because newyear project has the same name urls.py name= add. So that why we added unique name for it-->
 {% endblock %}
